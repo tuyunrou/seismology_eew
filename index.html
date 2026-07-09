@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中央氣象署地震測報中心 — 地震預警系統</title>
+<meta name="description" content="臺灣地震預警系統的演進與發展 — AI 代理群與大型語言模型在次世代地震測報之整合與應用">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Nav ===== -->
+<nav>
+  <div class="logo">CWA <span>地震測報</span></div>
+  <button class="nav-toggle" aria-expanded="false">☰</button>
+  <ul class="nav-links">
+    <li><a href="#about">地震環境</a></li>
+    <li><a href="#evolution">演進歷程</a></li>
+    <li><a href="#how">預警原理</a></li>
+    <li><a href="#ai">AI 技術</a></li>
+    <li><a href="#agents">AI 代理</a></li>
+    <li><a href="#tsunami">海嘯警報</a></li>
+    <li><a href="#evolution-tech">技術演進</a></li>
+  </ul>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-badge"><span class="dot"></span>中央氣象署地震測報中心</div>
+  <h1>臺灣地震預警系統<br>演進與發展</h1>
+  <p class="subtitle">從 102 秒到 7 秒 — AI 代理群與大型語言模型驅動的次世代地震測報</p>
+  <div class="hero-actions">
+    <a href="#about" class="btn btn-primary">探索內容</a>
+    <a href="#evolution" class="btn btn-outline">觀看時間軸</a>
+  </div>
+  <div class="scroll-indicator">
+    <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 0v16M2 10l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ===== About: Seismic Environment ===== -->
+<section id="about">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">臺灣地震環境與風險</h2>
+      <p class="section-desc">菲律賓海板塊與歐亞大陸板塊每年約以 7 至 8 公分的速度聚合，兩板塊持續擠壓碰撞導致臺灣地震頻繁發生。</p>
+    </div>
+
+    <div class="stats-grid fade-in">
+      <div class="stat-card">
+        <div class="stat-number">~100</div>
+        <div class="stat-label">每天地震次數</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">~100</div>
+        <div class="stat-label">每年顯著有感地震</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">30~40</div>
+        <div class="stat-label">年 / 大規模災害地震</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3,000</div>
+        <div class="stat-label">即時觀測頻道數</div>
+      </div>
+    </div>
+
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <div class="icon">🌏</div>
+        <h3>板塊構造</h3>
+        <p>臺灣東部海域菲律賓海板塊向北隱沒到歐亞大陸板塊下，南部海域歐亞大陸板塊向東隱沒到菲律賓海板塊下。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🏗️</div>
+        <h3>災害風險</h3>
+        <p>1900 年以來共發生 7 次大規模災害地震（罹難百人以上），每年地震造成數百人傷亡與大量房屋損失。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">📡</div>
+        <h3>監測網絡</h3>
+        <p>約 3000 個觀測頻道，每個頻道接收 100Hz 取樣率資料。員工人數約 60 人，24 小時作業，全年無休。</p>
+      </div>
+    </div>
+
+    <!-- Historical Disasters -->
+    <h3 style="margin:2.5rem 0 1rem;color:#f1f5f9">近十年災害地震</h3>
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <div class="icon">2016</div>
+        <h3>美濃地震 M6.6</h3>
+        <p>2016/2/6 · 臺南維冠大樓倒塌<br>117 人罹難</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">2018</div>
+        <h3>花蓮地震 M6.2</h3>
+        <p>2018/2/6 · 統帥飯店倒塌<br>17 人罹難</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">2022</div>
+        <h3>池上地震 M6.8</h3>
+        <p>2022/9/18 · 東里車站出軌<br>1 人罹難</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">2024</div>
+        <h3>花蓮地震 M7.1</h3>
+        <p>2024/4/3 · 天王星大樓傾倒<br>18 人罹難</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">2025</div>
+        <h3>大埔地震 M6.4</h3>
+        <p>2025/1/21 · 楠西區災損<br>29 人傷</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">2019</div>
+        <h3>花蓮地震 M6.3</h3>
+        <p>2019/4/18 · 銅門震度 7 級<br>1 人罹難</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Evolution Timeline ===== -->
+<section id="evolution" style="background:#0f172a">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">地震預警系統演進歷程</h2>
+      <p class="section-desc">從 102 秒到 7 秒 — 預警時效的持續縮短，盲區面積減少逾 50%</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item year-highlight">
+        <div class="timeline-year">1999</div>
+        <div class="timeline-title">921 集集大地震</div>
+        <div class="timeline-desc">規模 7.3，震醒臺灣對地震防災的重視，促動地震預警系統的發展。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2010 · 甲仙地震 M6.3</div>
+        <div class="timeline-title">首代預警架構建立</div>
+        <div class="timeline-desc">早期系統架構建立，預警發布時效約 102 秒。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2016 · 美濃地震 M6.6</div>
+        <div class="timeline-title">預警時效持續改善</div>
+        <div class="timeline-desc">演算法優化與測站加密，時效逐步縮短。</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022 · 池上地震 M6.8</div>
+        <div class="timeline-title">10 秒預警里程碑</div>
+        <div class="timeline-desc">預警發布時效縮短至 10 秒，盲區半徑 35 公里。</div>
+      </div>
+      <div class="timeline-item year-highlight">
+        <div class="timeline-year">2024 · 花蓮地震 M7.2</div>
+        <div class="timeline-title">7 秒預警 — 史上最快</div>
+        <div class="timeline-desc">
+          時效大幅壓縮至 7 秒，盲區半徑縮減至 25 公里，面積減少逾 50%。<br>
+          搶在地震波抵達之前，全力爭取每一秒寶貴的應變時間。
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2025 · 大埔地震 M6.4</div>
+        <div class="timeline-title">AI 模型輔助預警</div>
+        <div class="timeline-desc">機器學習模型正式導入震度預估，提升預警準確度。</div>
+      </div>
+      <div class="timeline-item year-highlight">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">AI 代理群協作 — 次世代測報</div>
+        <div class="timeline-desc">多代理協作架構 (my_agent, seismo, seismo_agent, secondary_agent) 導入，實現 EEW 自動化閉環工作流。自監督學習模型 (SeisWav2Vec 2.0 / LEM) 用於波相辨識。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How EEW Works ===== -->
+<section id="how">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">強震即時警報原理</h2>
+      <p class="section-desc">地震發生時會同時產生 P 波（縱波）與 S 波（橫波），P 波傳播速度快震幅小，藉由 P 波資訊推估地震大小，於災害性 S 波抵達前發布警報。</p>
+    </div>
+
+    <!-- Pipeline -->
+    <h3 style="margin-bottom:1rem;color:#f1f5f9">演算邏輯</h3>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem" class="fade-in">
+      <div class="pipeline-step" style="flex:1;min-width:120px">
+        <div class="step-num">1</div>
+        <div class="step-icon">📡</div>
+        <h4>偵測 P 波</h4>
+        <p>即時波形辨識</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" style="flex:1;min-width:120px">
+        <div class="step-num">2</div>
+        <div class="step-icon">🔗</div>
+        <h4>分群</h4>
+        <p>關聯同一地震</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" style="flex:1;min-width:120px">
+        <div class="step-num">3</div>
+        <div class="step-icon">📍</div>
+        <h4>地震定位</h4>
+        <p>震源位置解算</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" style="flex:1;min-width:120px">
+        <div class="step-num">4</div>
+        <div class="step-icon">📏</div>
+        <h4>計算規模</h4>
+        <p>地震大小估算</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step" style="flex:1;min-width:120px">
+        <div class="step-num">5</div>
+        <div class="step-icon">⚠️</div>
+        <h4>預估震度</h4>
+        <p>各地強度預測</p>
+      </div>
+    </div>
+
+    <p style="color:#94a3b8;font-size:0.9rem;margin-top:0.75rem;text-align:center">(Chen et al., 2019)</p>
+
+    <!-- AI Model Highlight -->
+    <div class="fade-in" style="margin-top:3rem">
+      <div class="section-divider"></div>
+      <h3 style="margin-bottom:0.5rem;color:#f1f5f9">AI 模型預估震度</h3>
+      <p class="section-desc" style="margin-bottom:1.5rem">採用機器學習模型，僅需 3 秒 P 波資料即可預估震度，爭取最多 15 秒預警時間。</p>
+      <div style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center">
+        <div style="flex:1;min-width:200px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.5rem;text-align:center">
+          <div style="font-size:0.8rem;color:#94a3b8">P 波資料</div>
+          <div style="font-size:2rem;font-weight:700;color:#38bdf8">3 sec</div>
+        </div>
+        <div style="font-size:1.5rem;color:#475569">→</div>
+        <div style="flex:1;min-width:200px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.5rem;text-align:center">
+          <div style="font-size:0.8rem;color:#94a3b8">預警時間</div>
+          <div style="font-size:2rem;font-weight:700;color:#22c55e">15 sec</div>
+        </div>
+        <div style="font-size:1.5rem;color:#475569">→</div>
+        <div style="flex:1;min-width:200px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.5rem;text-align:center">
+          <div style="font-size:0.8rem;color:#94a3b8">發布警報</div>
+          <div style="font-size:2rem;font-weight:700;color:#f472b6">⚠️ Warning</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grafana -->
+    <div class="fade-in" style="margin-top:3rem">
+      <div class="section-divider"></div>
+      <h3 style="margin-bottom:0.5rem;color:#f1f5f9">Grafana 即時監控系統</h3>
+      <p class="section-desc" style="margin-bottom:1.5rem">透過 Grafana 建構即時監控儀表板，掌握地震預警系統各環節運作狀態。</p>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="icon">🌊</div>
+          <h3>海底觀測網</h3>
+          <p>即時監控海底地震觀測網水壓計資料。</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📶</div>
+          <h3>資料延遲監控</h3>
+          <p>即時監控地震觀測站資料傳輸延遲狀況。</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📊</div>
+          <h3>預警發布狀態</h3>
+          <p>即時展示地震預警系統發布情形與波形。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI & ML ===== -->
+<section id="ai" style="background:#0f172a">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">人工智慧與機器學習</h2>
+      <p class="section-desc">從傳統演算法到自監督學習 — 地震監測技術的典範轉移</p>
+    </div>
+
+    <!-- Tabs -->
+    <div data-tabs>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-ssl">自監督學習</button>
+        <button class="tab-btn" data-tab="tab-lem">LEM 大型地震模型</button>
+        <button class="tab-btn" data-tab="tab-bp">傳統瓶頸</button>
+      </div>
+
+      <div class="tab-content active" id="tab-ssl">
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="icon">🎯</div>
+            <h3>無標註學習</h3>
+            <p>無需人工標記正確答案，直接利用數據本身的結構進行訓練。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">🧠</div>
+            <h3>通用表示</h3>
+            <p>學習具有信息量且通用的特徵表示 (Representations)，可遷移至多種下游任務。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">⚡</div>
+            <h3>高效微調</h3>
+            <p>只需少量任務導向數據即可達到 State-of-the-art 性能，大幅減少標註成本。</p>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.5rem">
+          <h4 style="color:#38bdf8;margin-bottom:0.5rem">SeisWav2Vec 2.0 — 從語音到地震</h4>
+          <p style="color:#94a3b8;font-size:0.92rem">延續 Wav2Vec 2.0 在語音處理上的成功，將其核心思想遷移至地震波形分析。基於對比學習 (Contrastive Learning) 的自監督模型，旨在區分正確樣本與干擾項。</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem">
+            <div style="background:#0f172a;border-radius:8px;padding:1rem;text-align:center">
+              <div style="font-size:0.8rem;color:#94a3b8;margin-bottom:0.25rem">特徵編碼器</div>
+              <div style="font-size:0.85rem;color:#e2e8f0">原始波形 → Embedding<br>捕捉局部結構</div>
+            </div>
+            <div style="background:#0f172a;border-radius:8px;padding:1rem;text-align:center">
+              <div style="font-size:0.8rem;color:#94a3b8;margin-bottom:0.25rem">上下文編碼器</div>
+              <div style="font-size:0.85rem;color:#e2e8f0">12 層 Transformer<br>學習全局上下文</div>
+            </div>
+            <div style="background:#0f172a;border-radius:8px;padding:1rem;text-align:center">
+              <div style="font-size:0.8rem;color:#94a3b8;margin-bottom:0.25rem">遮罩與量化</div>
+              <div style="font-size:0.85rem;color:#e2e8f0">離散化特徵 + 遮罩預測<br>模仿 NLP 學習方式</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-lem">
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="icon">📊</div>
+            <h3>大型地震模型 (LEM)</h3>
+            <p>地震監測的新紀元，透過大規模預訓練建構通用地震波形理解模型。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">🔬</div>
+            <h3>波相辨識突破</h3>
+            <p>傳統演算法需大量參數調整且準確性有限；深度學習大幅提升 P 波與 S 波到時判別精度。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">💡</div>
+            <h3>預訓練 + 微調</h3>
+            <p>在預訓練之後接上任務導向的 CNN 解碼器，採用三種策略進行微調，適應不同監測任務。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-bp">
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="icon">⚠️</div>
+            <h3>傳統演算法限制</h3>
+            <p>於自動辨識地震波相上有大量參數需調整，且準確性難以提升。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">🗄️</div>
+            <h3>標註資料稀缺</h3>
+            <p>深度學習需要海量標註數據。地震台站產生大量數據，但多數未經標註，形成資源浪費。</p>
+          </div>
+          <div class="info-card">
+            <div class="icon">🚀</div>
+            <h3>自監督學習解方</h3>
+            <p>自監督學習能從未標註資料中提取特徵，突破傳統瓶頸，讓大量未標註資料發揮價值。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Source -->
+    <div class="fade-in" style="margin-top:3rem">
+      <div class="section-divider"></div>
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">資料來源</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem">
+        <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:1rem 1.5rem;flex:1;min-width:150px;text-align:center">
+          <div style="font-weight:600;color:#38bdf8;font-size:0.95rem">CWBSN+</div>
+          <div style="color:#94a3b8;font-size:0.8rem">即時地震觀測網</div>
+        </div>
+        <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:1rem 1.5rem;flex:1;min-width:150px;text-align:center">
+          <div style="font-weight:600;color:#38bdf8;font-size:0.95rem">TSMIP</div>
+          <div style="color:#94a3b8;font-size:0.8rem">強地動觀測計畫 (550 站)</div>
+        </div>
+        <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:1rem 1.5rem;flex:1;min-width:150px;text-align:center">
+          <div style="font-weight:600;color:#38bdf8;font-size:0.95rem">人工標記</div>
+          <div style="color:#94a3b8;font-size:0.8rem">P 波與 S 波到時標註</div>
+        </div>
+        <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:1rem 1.5rem;flex:1;min-width:150px;text-align:center">
+          <div style="font-weight:600;color:#38bdf8;font-size:0.95rem">資料擴增</div>
+          <div style="color:#94a3b8;font-size:0.8rem">增加資料集多樣性</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Multi-Agent System ===== -->
+<section id="agents">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">AI 代理群 — 多代理協作系統</h2>
+      <p class="section-desc">整合地震監控、自動化派遣與科研分析的閉環系統，四位專責代理協同運作。</p>
+    </div>
+
+    <div class="agent-grid fade-in">
+      <div class="agent-card">
+        <div class="agent-icon" style="background:#1e3a5f;color:#38bdf8">🤖</div>
+        <h3>my_agent</h3>
+        <div class="agent-role">預警總管 · 監控與警報核心</div>
+        <p>維護監控 Cron、異常推播與日報總結。每 30 分鐘執行健康檢查，異常時推送最後 50 行日誌至 Telegram。</p>
+        <ul>
+          <li>EEW 流程監控與 .rep 分析</li>
+          <li>延遲量測與異常告警</li>
+          <li>協調各 Agent 任務分派</li>
+          <li>每日摘要彙編</li>
+        </ul>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-icon" style="background:#312e81;color:#818cf8">🔄</div>
+        <h3>secondary_agent</h3>
+        <div class="agent-role">整合工程師 · 自動化調度中心</div>
+        <p>負責 Hermes 鏈路轉發與跨代理任務派遣。開發 seismic-conductor 模組，實現標準化架構。</p>
+        <ul>
+          <li>跨 Agent 互叫機制</li>
+          <li>結構化數據路由分發</li>
+          <li>Host-side 腳本維護</li>
+          <li>Cron 配置與 Telegram 推播</li>
+        </ul>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-icon" style="background:#1e3a5f;color:#22c55e">📊</div>
+        <h3>seismo_agent</h3>
+        <div class="agent-role">地震學助教 · 數據科學流水線</div>
+        <p>解析 .rep 檔案、效能延遲量測與自動繪圖。原始檔轉為 CSV/JSON，自動生成散布與序列圖。</p>
+        <ul>
+          <li>.rep 轉換與結構化輸出</li>
+          <li>圖表自動生成</li>
+          <li>雙重存檔 (二進位 + 數據)</li>
+          <li>Docker 容器健康管理</li>
+        </ul>
+      </div>
+
+      <div class="agent-card">
+        <div class="agent-icon" style="background:#312e81;color:#f472b6">🔬</div>
+        <h3>seismo</h3>
+        <div class="agent-role">科學研究員 · 數據建模</div>
+        <p>專注地震數據建模、實驗設計與趨勢預測。針對密集小震群與深部無感地震建立統計模型。</p>
+        <ul>
+          <li>長期趨勢分析</li>
+          <li>預警閾值動態調整建議</li>
+          <li>科學驗證報告產出</li>
+          <li>學術論文數據鏈路追蹤</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Workflow -->
+    <div class="fade-in" style="margin-top:3rem">
+      <div class="section-divider"></div>
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">EEW 自動化閉環工作流</h3>
+      <div class="workflow">
+        <div class="workflow-row">
+          <div class="wf-stage">事件觸發</div>
+          <div><span class="wf-desc">偵測 .rep 更新 → 啟動分析流程</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">數據派遣</div>
+          <div class="wf-agent"><span>my_agent</span><span>secondary_agent</span><span>指派跨節點任務</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">科學繪圖</div>
+          <div class="wf-agent"><span>seismo_agent</span><span>生成事件散布圖表</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">研究建模</div>
+          <div class="wf-agent"><span>seismo</span><span>長期趨勢預測</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">彙報發送</div>
+          <div class="wf-agent"><span>secondary_agent</span><span>產出日報並推播</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daily Report -->
+    <div class="fade-in" style="margin-top:2rem">
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">eew_report_daily 整合規劃</h3>
+      <table class="comp-table">
+        <thead>
+          <tr><th>階段</th><th>主責 Agent</th><th>產出內容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>階段 1：匯總</td><td>my_agent</td><td>系統健康摘要、異常記錄</td></tr>
+          <tr><td>階段 2：分析</td><td>seismo_agent</td><td>震級分布圖、延遲統計</td></tr>
+          <tr><td>階段 3：研究</td><td>seismo</td><td>近期活動趨勢與模型反饋</td></tr>
+          <tr><td>階段 4：組裝</td><td>secondary</td><td>最終日報封裝與推播</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Meeting -->
+    <div class="fade-in" style="margin-top:2rem">
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">每日回報機制時程表</h3>
+      <table class="comp-table">
+        <thead>
+          <tr><th>時間</th><th>作業</th><th>說明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>08:00</td><td>Gmail 最新郵件推播</td><td>Fetch latest emails → Telegram</td></tr>
+          <tr><td>08:00</td><td>EEW 每日報告</td><td>eew_report_daily 自動產生前日系統摘要</td></tr>
+          <tr><td>03:00</td><td>夜間 RT pipeline</td><td>nightly_rt_tests 進行端到端延遲測試</td></tr>
+          <tr><td>每 30 分鐘</td><td>Earthworm 容器巡檢</td><td>eew_health 檢查模組與 ring/sniff 狀態</td></tr>
+          <tr><td>每月 1 日 09:00</td><td>月支出報表</td><td>monthly-expense-report 發送美化 Excel</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Tsunami ===== -->
+<section id="tsunami" style="background:#0f172a">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">海嘯警報作業</h2>
+      <p class="section-desc">科技極限與複合型災害 — 臺灣周邊三條海溝的海嘯威脅</p>
+    </div>
+
+    <div class="info-grid fade-in" style="margin-bottom:2rem">
+      <div class="info-card">
+        <div class="icon">🌊</div>
+        <h3>臺灣東部：琉球海溝</h3>
+        <p>菲律賓海板塊向北隱沒，板塊界面可能發生大規模地震引發海嘯。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🌊</div>
+        <h3>臺灣東南部：亞普海溝</h3>
+        <p>位於呂宋島東方，具備引發區域性海嘯的潛勢。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🌊</div>
+        <h3>臺灣南部：馬尼拉海溝</h3>
+        <p>歐亞板塊向東隱沒，為南海潛在的海嘯來源。</p>
+      </div>
+    </div>
+
+    <!-- Warning Zones -->
+    <div class="fade-in">
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">海嘯警戒分區（6 區）</h3>
+      <div class="tsunami-grid">
+        <div class="tsunami-zone"><div class="zone-name">東北</div><div class="zone-detail">基隆～宜蘭</div></div>
+        <div class="tsunami-zone"><div class="zone-name">東部</div><div class="zone-detail">花蓮～臺東</div></div>
+        <div class="tsunami-zone"><div class="zone-name">東南</div><div class="zone-detail">臺東～恆春</div></div>
+        <div class="tsunami-zone"><div class="zone-name">西南</div><div class="zone-detail">恆春～雲林</div></div>
+        <div class="tsunami-zone"><div class="zone-name">西北</div><div class="zone-detail">雲林～新北</div></div>
+        <div class="tsunami-zone"><div class="zone-name">東北</div><div class="zone-detail">新北～基隆</div></div>
+      </div>
+    </div>
+
+    <!-- Real Example -->
+    <div class="fade-in" style="margin-top:2rem">
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">實例：2024/4/3 花蓮地震 M7.2</h3>
+      <div class="workflow">
+        <div class="workflow-row">
+          <div class="wf-stage">07:58:09</div>
+          <div><span class="wf-desc">地震發生</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">08:11</div>
+          <div><span class="wf-desc">海嘯警報第 1 報發布</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">10:00</div>
+          <div><span class="wf-desc">海嘯警報第 2 報（波高與到時更新）</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">11:10</div>
+          <div><span class="wf-desc">海嘯警報解除</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in" style="margin-top:2rem">
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">實例：2025/7/30 堪察加半島 M8.8</h3>
+      <div class="workflow">
+        <div class="workflow-row">
+          <div class="wf-stage">07:25</div>
+          <div><span class="wf-desc">地震發生</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">07:38</div>
+          <div><span class="wf-desc">海嘯消息發布</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">09:12</div>
+          <div><span class="wf-desc">海嘯警訊</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">11:40</div>
+          <div><span class="wf-desc">海嘯警報</span></div>
+        </div>
+        <div class="workflow-row">
+          <div class="wf-stage">17:10</div>
+          <div><span class="wf-desc">警報解除</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Limits -->
+    <div class="fade-in" style="margin-top:2.5rem">
+      <div class="section-divider"></div>
+      <h3 style="margin-bottom:1rem;color:#f1f5f9">科技極限與挑戰</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="icon">⚠️</div>
+          <h3>誤報風險</h3>
+          <p>短時間內發生兩個地震可能造成誤報。如 111 年 9 月 18 日雲嘉南地區誤發國家級警報，及 115 年 2 月 23 日馬來西亞婆羅洲外海地震導致誤發中小學 EEW。</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">🔇</div>
+          <h3>漏報挑戰</h3>
+          <p>兩個地震相差 4 秒時，系統僅處理第一個地震，後面較大的地震可能被漏報。</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">🏗️</div>
+          <h3>複合型災害</h3>
+          <p>深震、海嘯、強震持續時間等因素交織，須同時考慮強度與持續時間。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Disaster Prevention ===== -->
+<section id="prevention">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">防災應用與最後一哩路</h2>
+      <p class="section-desc">掌握關鍵應變與整備，將地震資訊直送防救災需求單位</p>
+    </div>
+
+    <div class="stats-grid fade-in">
+      <div class="stat-card">
+        <div class="stat-number">4,100+</div>
+        <div class="stat-label">高中小學</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">~40</div>
+        <div class="stat-label">防救災單位</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4,500+</div>
+        <div class="stat-label">地震速報直接發送單位</div>
+      </div>
+    </div>
+
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <div class="icon">📱</div>
+        <h3>多元發布管道</h3>
+        <p>地震報告、網路推播、手機細胞廣播、電視台插播、App、臉書粉絲團、氣象署官網、手機簡訊、LINE Notify。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🏫</div>
+        <h3>校園防災</h3>
+        <p>~4100 所高中小學接收地震速報資訊，師生可即時緊急庇護。國家防災日定期演練。</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🚄</div>
+        <h3>交通運輸</h3>
+        <p>臺鐵、高鐵、捷運系統直接連線地震預警，即時啟動列車減速與應變。</p>
+      </div>
+    </div>
+
+    <div class="fade-in" style="margin-top:2rem;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.5rem">
+      <h4 style="color:#38bdf8;margin-bottom:0.5rem">💡 村里地震廣播預警系統</h4>
+      <p style="color:#94a3b8;font-size:0.92rem">
+        以 114 年 12 月 27 日規模 7.0 地震為例，屏東縣竹田鄉履豐村鄉下長輩沒手機，屏東青年自架「村里地震廣播預警系統」，補足最後一哩路的警報涵蓋缺口。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Technology Evolution ===== -->
+<section id="evolution-tech" style="background:#0f172a">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-divider"></div>
+      <h2 class="section-title">AI × Workflow 技術演進</h2>
+      <p class="section-desc">2022 → 2026，用 2026 年人類思維的方式去思考每一項工作</p>
+    </div>
+
+    <div class="evo-grid">
+      <div class="evo-card fade-in">
+        <div class="evo-year">2022 – 2024</div>
+        <h3>對話時代</h3>
+        <p>ChatGPT 登場，寫程式、查指令、翻譯、寫英文信都用「問」的。產出仍需自己手動複製、貼上、在本機執行。AI 是助理，人類是手腳。</p>
+      </div>
+      <div class="evo-card fade-in">
+        <div class="evo-year">2024 – 2025</div>
+        <h3>整合介面</h3>
+        <p>Agent 進入 IDE：Cursor、Windsurf、GitHub Copilot Agent Mode 等 AI 原生編輯器登場。能直接改多檔程式、執行終端機指令、跑測試、部署到雲端。AI 開始接管「執行」那一段工作。</p>
+      </div>
+      <div class="evo-card fade-in">
+        <div class="evo-year">2025 – 2026</div>
+        <h3>自主 Agent</h3>
+        <p>模型能力持續增強，專門化 agent 出現。Claude Code 等 CLI agent 能獨立完成多步驟任務。思維轉換：別再問「我要怎麼做這件事」，改問「要交給哪個 agent、怎麼驗收？」</p>
+      </div>
+    </div>
+
+    <div class="fade-in" style="margin-top:2rem;text-align:center;padding:2rem;background:#1e293b;border:1px solid #334155;border-radius:12px">
+      <p style="color:#94a3b8;font-size:1.1rem;font-style:italic;max-width:600px;margin:0 auto">
+        VS Code — 貫穿三個階段的基座平台：Copilot Chat 住在這，Cursor / Windsurf / Antigravity 都是它的 fork。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>中央氣象署地震測報中心 · Central Weather Administration, Seismological Center</p>
+  <p style="margin-top:0.5rem">陳達毅 科長 · 2026</p>
+  <p style="margin-top:0.5rem">
+    <a href="https://github.com/yunroutu" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</footer>
+
+<!-- ===== Go to top ===== -->
+<button class="gotop" aria-label="回到頂部">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
